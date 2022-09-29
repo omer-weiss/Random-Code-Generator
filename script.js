@@ -8,6 +8,29 @@
 //password is displayed in alert or in the dom
 
 
+//prompt user for password length
+
+do {
+  var userInputLength = prompt("Please enter a number for password length. The number you choose must be minimum 8 to a maximum of 128");
+  userInputLength = validateLength(userInputLength);
+} while (!userInputLength)
+
+// validate user input
+
+function validateLength (userInputLength) {
+  if (userInputLength >= 8 && userInputLength <= 128) {
+    return userInputLength;
+  } else return false;
+}
+
+//create variable to hold input of password length
+
+var passwordLength = userInputLength;
+
+//ask user for charcter choices
+
+
+
 
 
 
